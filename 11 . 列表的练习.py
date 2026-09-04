@@ -20,3 +20,9 @@ print("这几个数里面的最小值",num_list[0])
 print("这几个数里面的最大值",num_list[-1])
 print("这几个数字的平均值",sum(num_list)/len(num_list))
 # len是length的简称所以表示的意思是长度
+
+
+# min()获取最小值
+# max():获取最大值
+# sum:求和
+# len:计算长度
