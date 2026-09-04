@@ -35,3 +35,21 @@ print(new_list)
 
 
 # ----------重要,very improtant
+# 1. 将如下多个列表合并为一个列表，并去重复元素，排序（升序）后输出到控制台。
+
+# 合并如下三个列表，并对合并后的列表进行元素的去重，然后排序后输出到控制台
+# list1 = ['M', 'A', 'C', 'E', 'F', 'G', 'H', 'L', 'N', 'I', 'J', 'K', 'Q']
+# list2 = ['X', 'Z', 'T', 'Y', 'D', 'E', 'F', 'G']
+# list3 = ['W', 'A', 'S', 'D']
+#
+#
+#
+list1 = ['M', 'A', 'C', 'E', 'F', 'G', 'H', 'L', 'N', 'I', 'J', 'K', 'Q']
+list2 = ['X', 'Z', 'T', 'Y', 'D', 'E', 'F', 'G']
+list3 = ['W', 'A', 'S', 'D']
+new_list = []
+num_list = [*list1, *list2, *list3]
+print(num_list)
+for num in num_list:
+    if num not in new_list:
+        new_list.append(num)
